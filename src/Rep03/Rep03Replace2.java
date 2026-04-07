@@ -14,7 +14,14 @@ public class Rep03Replace2 {
         int age = Integer.parseInt(strAge);
 
         double calories = 0;
-
+        if (gender.equals("M") || gender.equals("m")) {
+            calories = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+        } else if(gender.equals("W") || gender.equals("w")){
+            calories = (10 * weight) + (6.25 * height) - (5 * age) - 161;
+        } else {
+            JOptionPane.showMessageDialog(null,
+                    "성별이 잘못 입력되었습니다.");
+        }
 
         JOptionPane.showMessageDialog();
 }
