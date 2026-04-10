@@ -11,5 +11,10 @@ public class EggBasket {
         System.out.println(eggsPerBasket + " eggs per basket and");
         System.out.println(numberOfBaskets + " baskets, then");
         System.out.println("the total number of eggs is " + totalEggs);
+
+        double x;
+        int n = 5;
+        x = n;
+        System.out.println(x);
     }
 }
