@@ -19,4 +19,16 @@ public class Lotto {
         }
         System.out.println();
     }
+
+    public void remakeAuto(){
+        for(int i = 0; i < numbers.length; i++){
+            numbers[i] = random.nextInt(45) + 1;
+            for(int j = 0; j < i; j++){
+                if(numbers[i] == numbers[j]){
+                    i--;
+                    break;
+                }
+            }
+        }
+    }
 }
