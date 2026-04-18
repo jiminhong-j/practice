@@ -16,6 +16,14 @@ public class Student {
         this.score = score;
     }
 
+    public String getName(){
+        return name;
+    }
+
+    public int getScore(){
+        return score;
+    }
+
     public void printAll() {
         System.out.println("학생 이름: " + name);
         System.out.println("학생 점수: " + score);

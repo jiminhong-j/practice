@@ -21,10 +21,13 @@ public class Main {
             list.add(student);
         }
 
-        for(int i = 0; i < list.size(); i++){
-            System.out.println(i+1 + "번 학생");
-            list.get(i).printAll();
-            System.out.println();
+        Student top = list.get(0);
+        for(int i = 1; i < list.size(); i++){
+            if(list.get(i).getScore() > top.getScore()) {
+                top = list.get(i);
+            }
         }
+        System.out.println("1등 학생: " + top.getName());
+        System.out.println("점수: " + top.getScore());
     }
 }
