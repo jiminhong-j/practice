@@ -27,6 +27,7 @@ public class Main {
         for(int i = 0; i < list.size(); i++){
             if(list.get(i).getName().equals(find)){
                 System.out.println(find + "의 점수는 " + list.get(i).getScore() + "점입니다.");
+                break;
             }
         }
 
