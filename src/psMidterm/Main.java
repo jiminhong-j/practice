@@ -21,6 +21,7 @@ public class Main {
             list.add(student);
         }
 
+        System.out.print("검색 이름: ");
         String find = s.nextLine();
 
         for(int i = 0; i < list.size(); i++){
