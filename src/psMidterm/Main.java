@@ -21,13 +21,13 @@ public class Main {
             list.add(student);
         }
 
-        Student top = list.get(0);
-        for(int i = 1; i < list.size(); i++){
-            if(list.get(i).getScore() > top.getScore()) {
-                top = list.get(i);
+        String find = s.nextLine();
+
+        for(int i = 0; i < list.size(); i++){
+            if(list.get(i).getName().equals(find)){
+                System.out.println(find + "의 점수는 " + list.get(i).getScore() + "점입니다.");
             }
         }
-        System.out.println("1등 학생: " + top.getName());
-        System.out.println("점수: " + top.getScore());
+
     }
 }
