@@ -1,6 +1,7 @@
 package j031;
+
 import j031.model.User;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args){
@@ -11,14 +12,12 @@ public class Main {
         String name = s.nextLine();
 
         User user = new User(userid, password, name);
-
         if(!user.checkPW()){
-            System.out.println("Error! password is too short,");
+            System.out.println("Error! password is too short.");
         } else {
-            System.out.println("User Id: " + user.getUserid());
-            System.out.println("Password: " + user.getMaskedPW());
-            System.out.println("Name: " + user.getName());
+            user.getPW();
+            user.print();
         }
-    }
 
+    }
 }
