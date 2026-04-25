@@ -1,4 +1,4 @@
-package Rep06;
+package Rep06_1;
 
 public class Temperature01 {
     // 멤버 변수

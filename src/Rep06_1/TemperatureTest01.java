@@ -1,7 +1,4 @@
-package Rep06;
-
-import java.util.Scanner;
-
+package Rep06_1;
 
 
 public class TemperatureTest01
