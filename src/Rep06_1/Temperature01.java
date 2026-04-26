@@ -19,6 +19,6 @@ public class Temperature01 {
 
     // 출력 메소드: 현재 온도와 단위를 출력한다
     public void writeOutput(){
-        System.out.println("Temperature 01 = " + temperature + " degrees " + unit + ".");
+        System.out.println("Temperature01 = " + temperature + " degrees " + unit + ".");
     }
 }
