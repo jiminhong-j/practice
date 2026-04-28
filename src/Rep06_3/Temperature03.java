@@ -91,11 +91,16 @@ public class Temperature03 {
     }
 
     // 온도 설정 메소드: 온도 또는 단위를 변경. 오버로드되어서 여러 버전으로 구현됨
-    public void setTemperature(double temperature){
+    public void set(double temperature, char unit){
+        this.temperature = temperature;
+        this.unit = unit;
+    }
+
+    public void set(double temperature){
         this.temperature = temperature;
     }
 
-    public void setUnit(char unit){
+    public void set(char unit){
         this.unit = unit;
     }
 
