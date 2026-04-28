@@ -73,4 +73,26 @@ public class Temperature03 {
         System.out.printf("Temperature03 = %.1f degrees F.\n", f);
     }
 
+    // 온도 가져오기: 현재 온도를 섭씨 또는 화씨로 반환한다
+    public double getF(){
+
+        return
+    }
+
+    public double getC(){
+
+        return
+    }
+
+    // 온도 설정 메소드: 온도 또는 단위를 변경. 오버로드되어서 여러 버전으로 구현됨
+    public void setTemperature(double temperature){
+        this.temperature = temperature;
+    }
+
+    public void setUnit(char unit){
+        this.unit = unit;
+    }
+
+    // 비교 메소드: 두 온도 객체를 비교하여 동등함, 크거나 작음을 평가한다
+
 }
