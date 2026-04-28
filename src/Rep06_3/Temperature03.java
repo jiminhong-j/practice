@@ -105,5 +105,15 @@ public class Temperature03 {
     }
 
     // 비교 메소드: 두 온도 객체를 비교하여 동등함, 크거나 작음을 평가한다
+    public boolean equals(Temperature03 other){
+        return this.getC() == other.getC();
+    }
 
+    public boolean isGreaterThan(Temperature03 other){
+        return this.getC() > other.getC();
+    }
+
+    public boolean isLessThan(Temperature03 other){
+        return this.getC() < other.getC();
+    }
 }
