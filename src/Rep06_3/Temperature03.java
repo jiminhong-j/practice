@@ -75,19 +75,24 @@ public class Temperature03 {
 
     // 온도 가져오기: 현재 온도를 섭씨 또는 화씨로 반환한다
     public double getF(){
+        double t;
 
         if((unit == 'F') || (unit == 'f'))
-            return temperature;
+            t = temperature;
         else
-            return temperature * 9.0 / 5.0 + 32;
+            t = temperature * 9.0 / 5.0 + 32;
+
+        return Math.round(t*10)/10.0;
     }
 
     public double getC(){
-
+        double t;
         if((unit == 'C') || (unit == 'c'))
-            return temperature;
+            t =  temperature;
         else
-            return (temperature - 32) * 5.0 / 9.0;
+            t = (temperature - 32) * 5.0 / 9.0;
+
+        return Math.round(t*10)/10.0;
     }
 
     // 온도 설정 메소드: 온도 또는 단위를 변경. 오버로드되어서 여러 버전으로 구현됨
