@@ -11,9 +11,9 @@ public class Main {
 
         for(int i = 0; i < 3; i++){
             Student student = new Student();
-            System.out.print("이름 입력: ");
+            System.out.print("Name: ");
             String name = s.nextLine();
-            System.out.print("점수 입력: ");
+            System.out.print("Score: ");
             int score = s.nextInt();
             s.nextLine();
             System.out.println();
@@ -21,7 +21,7 @@ public class Main {
             list.add(student);
         }
 
-        System.out.print("검색 이름: ");
+        System.out.print("Search name: ");
         String find = s.nextLine();
 
         for(int i = 0; i < list.size(); i++){
